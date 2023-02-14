@@ -1,0 +1,23 @@
+# Maven-specific files
+target/
+mvnw
+mvnw.cmd
+.settings/
+*.log
+
+# IntelliJ-specific files (if using IntelliJ IDEA)
+.idea/
+*.iml
+*.iws
+
+# Eclipse-specific files (if using Eclipse)
+.classpath
+.project
+.settings/
+*.launch
+*.log
+ShopmeCommon/.mvn
+ShopmeWebParent/.mvn
+ShopmeWebParent/ShopmeBackend/.mvn
+ShopmeWebParent/ShopmeFrontend/.mvn
+*.md
