@@ -81,14 +81,20 @@ public class UserRepositoryTests {
 		User userRavi = userRepository.findById(2).get();
 		Role roleEditor = new Role(3);
 		Role roleSalesperson = new Role(2);
-		
 		userRavi.getRoles().remove(roleEditor);
 		userRavi.addRole(roleSalesperson);
 		userRepository.save(userRavi);
 	}
-	
+
 	@Test
 	public void testDeleteUser() {
 		userRepository.deleteById(2);
+	}
+
+	@Test
+	public void testGetUserByEmail() {
+		String email = "namjavaprogrammer@gmail.com";
+		User user = userRepository.getUserByEmail(email);
+		assertThat(user).isNotNull();
 	}
 }
